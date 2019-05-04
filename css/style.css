@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: #f4f4f4;
+    width: 100%;
+    background: rgb(160, 52, 160);
+    /* background: url('../img/bg-pattern.png'); */
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+.bg-nav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+
+.navbar {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+
+}
+
+.navbar .logo {
+    margin-right: auto;
+    font-size: 20px;
+    color: rgb(200, 202, 39);
+}
+
+.navbar .logo:hover {
+    color: rgba(225,225,225,1);
+    transition: all .5s ease; 
+}
+
+.navbar .hum-icon {
+    display: none;
+}
+
+.navbar .main-nav {
+    display: flex;
+}
+
+.main-nav li {
+    list-style-type: none;
+}
+
+.main-nav li a {
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgba(225,225,225,.75)
+}
+
+.main-nav li a:hover {
+    color: rgba(225,225,225,1);
+    background: #111;
+    transition: all .5s ease; 
+}
+
+.more-height {
+    width: 100%;
+    height: 100vh;
+    background: rgb(64, 173, 187);
+}
+
+.nav-colored {
+    background: rgb(44, 42, 42);
+}
+
+.nav-colored-a {
+    color: #fff;
+}
+
+.nav-transparent {
+    background: transparent;
+}
+
+/* Showcase */
+.showcase {
+    display: flex;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.showcase .img-showcase img {
+    height: 600px;
+    padding-right: 10rem;
+
+}
+
+.showcase .text-showcase {
+    text-align: left;
+    margin-top: 50px;
+    left: 5rem;
+    margin-left: 7rem;
+    margin-right: auto;
+    line-height: 55px;
+    padding: 50px;
+    color: #fff;
+    width: 700px;
+}
+
+.showcase .text-showcase h1 {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 3rem;
+}
+
+.showcase .text-showcase .btn {
+    color: rgba(225,225,225,1);
+    border: 1px solid rgba(225,225,225,1);
+    padding: 1rem 2rem;
+    margin-top: 5rem;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.showcase .text-showcase .btn:hover {
+    background: rgba(197, 199, 63, 0.75);
+    transition: all .2s ease;
+}
+
+/* Download */
+#download {
+    width: 100%;
+    background: rgba(197, 199, 63, 0.75);
+}
+
+#download .container {
+    width: 70%;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.container .download-text {
+    text-align: center;
+}
+
+.download-text h1 {
+    font-size: 4.5rem;
+    color: rgba(0,0,0,.75);
+    font-weight: 500;
+}
+
+.download-text p {
+    margin: 2rem 0;
+    color: rgba(0,0,0,.75);
+}
+
+.download-icon {
+    text-align: center;
+}
+
+.download-icon img {
+    height: 3rem;
+}
+
+/* Features */
+#features {
+    width: 100%;
+}
+
+.features-text {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.features-text h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: rgba(0,0,0,.75);
+}
+
+.features-text p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: rgba(0,0,0,.5)
+}
+
+.features-box {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    padding: 2rem 5rem;
+    margin: 2rem auto;
+}
+
+.features-box img {
+    width: 300px;
+    margin-bottom: -6.3rem;
+}
+
+.boxes {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box-text {
+    padding-top: 3rem;
+}
+
+.box-text .boxes {
+    margin-bottom: 3rem
+}
+
+.boxes h3 {
+    color: rgba(0,0,0,.75);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.boxes p {
+    color: rgba(0,0,0,.5);
+    font-size: 1.1rem;
+}
+
+.space {
+    margin: 0 5rem;
+}
+
+
+/* Start Background Images */
+#bgImage {
+    background: url('../img/bg-cta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.bgImage-text {
+    width: 500px;
+}
+
+.bgImage-text h1 {
+    padding: 10rem 5rem 4rem;
+    font-size: 5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.bgImage-text .btn {
+    position: relative;
+    left: 5.5rem;
+    color: rgba(225,225,225,1);
+    border: 1px solid rgba(225,225,225,1);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    transition: background .2s ease;
+}
+
+.bgImage-text .btn:hover {
+    background: rgba(197, 199, 63, 0.75);
+}
+
+/* Contact */
+#contact {
+    background: rgba(197, 199, 63, 0.75);
+    text-align: center;
+}
+
+#contact .container {
+    padding: 6rem 0;
+}
+
+.container .contact-text h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgba(0,0,0,.75);
+}
+
+.container .icon {
+    margin: 2rem 0;
+}
+
+.icon-space {
+    margin: 0 2rem;
+}
+
+.icon .cursor {
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: rgba(225,225,225,.5);
+    text-align: center;
+    padding: 2rem 0;
+    font-size: .8rem;
+}
+
+footer .footer-icons {
+    margin-top: .4rem;
+}
+
+.footer-icons span:nth-child(2) {
+    margin: 0 .4rem;
+}
+
+.footer-icons span {
+    cursor: pointer;
+}
+
+.footer-icons span:hover {
+    color: rgba(218, 190, 36);
+}
+
+@media screen and (max-width: 910px) {
+    .navbar {
+        display: block;
+        width: 100%;
+        background: #fff;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        padding-top: 1rem;
+        padding-left: .8rem;
+    }
+
+    .navbar .hum-icon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    .navbar .main-nav-mobile {
+        width: 100%;
+        margin-top: 3rem;
+        background: #fff;
+        display: none;
+    }
+
+    .navbar .main-nav-mobile li {
+        padding: .5rem 0;
+    }
+
+    .navbar .main-nav-mobile li a {
+        color: #111;
+    }
+
+    .navbar .main-nav-mobile li a:hover {
+        background: #fff;
+        color: rgb(200, 202, 39);
+    }
+
+    .showcase {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .showcase .text-showcase {
+        width: 100%;
+        margin: auto 0;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .showcase .text-showcase h1 {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .showcase .text-showcase .btn {
+        width: 80%;
+        font-size: 12px;
+        padding: .75rem 1rem;
+        letter-spacing: 0;
+    }
+
+    .showcase .img-showcase {
+        width: 100%;
+        text-align: center;
+    }
+
+    .showcase .img-showcase img {
+        padding: 0;
+        height: 500px;
+        text-align: center;
+    }
+
+    /* Download */
+    .download-text h1 {
+        font-size: 3rem;
+    }
+
+    /* Features */
+    .features-text h1 {
+        font-size: 3rem;
+    }
+
+    .features-box {
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .box img {
+        width: 200px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.2rem;
+    }
+
+    .box-text {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .boxes {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Start background Images */
+
+    .bgImage-text {
+        width: 100%;
+    }
+
+    .bgImage-text h1 {
+        padding-left: 1rem;
+        font-size: 4rem;
+    }
+
+    .bgImage-text .btn {
+        left: 1rem;
+    }
+
+    /* Contact */
+    #contact .contact-text h1 {
+        font-size: 2rem;
+    }
+}
