@@ -1,14 +1,17 @@
 {
   "name": "myapp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "candra kriswinarto",
   "license": "MIT",
+  "homepage": "https://candraKriswinarto.github.io/myapp",
   "dependencies": {
     "gh-pages": "^2.0.1"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
 }
